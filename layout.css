@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    
+    border: 2px solid black;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    "head head head"
+    "side main nav"
+    "side foot foot";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+
+}
+header,
+footer,
+main,
+nav,
+aside{
+    background-color: steelblue;
+    color: #fff;
+    padding: 20px;
+    border: skyblue 1px solid ;
+}
+header{
+    grid-area: head;
+    
+}
+main{
+    grid-area: main;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: side;
+}
+footer{
+    grid-area: foot;
+}
